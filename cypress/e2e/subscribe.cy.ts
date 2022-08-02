@@ -15,6 +15,5 @@ describe("Newslatter Subsribe Form", ()=>{
         cy.getByData("email-input").type(invalidEmail)
         cy.getByData("submit-button").click()
         cy.getByData("success-message").should("not.exist")
-        
     });
 })
